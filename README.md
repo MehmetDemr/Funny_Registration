@@ -14,7 +14,7 @@ Error Handling: Comprehensive error handling ensures smooth operation and user-f
 Interactive UI: The UI features dynamic elements such as an animated monkey character that interacts with the username and password input fields.
 Password Visibility: Users can toggle password visibility for easier input.
 
-##Usage
+## Usage
 To run this program, you'll need an environment that supports HTML, CSS, and JavaScript. Follow these steps to run the program:
 Copy or download the project to a local directory.
 Open the downloaded files with a text editor or code editor.
