@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Website.css">
+
+   
+</head>
+<body>
+
+  <div class="container">
+    <div class="ears"></div>
+    <div class="head">
+        <div class="face">
+            <div class="wrapper">
+                <div class="eyes">
+                  
+                    <div class="eye">
+                        <div class="shut">
+                            <span></span>
+                        </div>
+                        <div class="pupil"></div>
+                    </div>
+                         
+                    <div class="eye">
+                        <div class="shut">
+                            <span></span>
+                        </div>
+                        <div class="pupil"></div>
+                    </div>
+                </div>
+                <div class="nose"></div>
+            </div>
+            <div class="mouth"></div>
+        </div>
+    </div>
+    <div class="arms">
+        <div class="left-hand"></div>
+        <div class="right-hand"></div>
+    </div>
+</div>
+ 
+<div class="form-container">
+  <form onsubmit="return handleSubmit();">
+    <label id="label1" for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="Enter username here..." required>
+    <br>
+    <br>
+    <label id="label2" for="password">Password:</label>
+    <input type="password" id="password" name="password" placeholder="Enter password here..." required="Please enter password">
+    <input type="button" id="see" onclick="seePassword()" value="👁️">
+    <br>
+    <br>
+    <input type="button" id="sign" onclick="Sign()" value="Sign Up!">
+    <br>
+    <input type="button" id="log" onclick="Log()" value="Log In!">
+
+    
+  </form>
+</div>
+
+<div id="result"></div>
+
+<script src="Website.js"></script>   
+</body>
+</html>

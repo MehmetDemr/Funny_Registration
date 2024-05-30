@@ -1,0 +1,422 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('https://wallpapermural.com/cdn/shop/files/Jungle_Cats_Wallpaper_Mural_Artwork.jpg?v=1700575083');
+  background-size: cover;
+}
+
+#username,
+#password {
+  background-color: dimgrey;
+  color:black;
+  height: 30px; 
+  width: 300px; 
+  padding-right: 25px;
+}
+
+
+#see
+{
+background-color: rgb(255, 127, 138);
+height: 30px;
+width: 30px;
+
+
+
+
+}
+
+#log,
+#sign {
+  background-color: crimson;
+  color: #fff; 
+  height: 40px; 
+  width: 150px;
+  margin-top: 10px;
+  margin-left: 120px;
+}
+
+#label1,
+#label2 {
+  background-color: dimgrey;
+  color: #fff; 
+  padding: 5px; 
+}
+
+.form-container {
+ 
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  background-color: gray;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  padding: 20px;
+  
+  animation: 10s swish infinite;
+
+  
+}
+.container {
+  position: absolute;
+  top:5px ;
+  
+}
+
+.head {
+  height: 190px;
+  width: 172px;
+  position: absolute;
+  transform: translate(-50%, 0);
+  left: 50%;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 100px 100px 70px 70px;
+  border: 10px solid ;
+  background:saddlebrown;
+  &::before {
+    display: block;
+    content: "";
+    height: 21px;
+    width: 52px;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 15%;
+    left: 50%;
+    box-sizing: border-box;
+    border-radius: 22px;
+    opacity: 0.3;
+    background: white;
+  }
+}
+
+.ears {
+  height: 45px;
+  width: 202px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: 4s wiggle infinite;
+  box-sizing: border-box;
+  border-radius: 30px;
+  border: 10px solid #292933;
+  background: saddlebrown;
+}
+
+.face {
+  height: 86px;
+  width: 135px;
+  position: relative;
+  top: 32px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  box-sizing: border-box;
+  border-radius: 50px;
+  border: 10px solid #292933;
+  background:rgb(226, 117, 67);
+}
+.nose {
+  height: 17px;
+  width: 38px;
+  position: absolute;
+  top: 51px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-sizing: border-box;
+  border-radius: 15px 15px 0 0;
+  border: 8px solid #292933;
+  border-bottom: 0;
+  background: transparent;
+  &::before {
+    display: block;
+    content: "";
+    height: 6px;
+    width: 20px;
+    z-index: -1;
+    position: relative;
+    transform: translate(-50%, -50%);
+    top: 3px;
+    left: 50%;
+    box-sizing: border-box;
+    border-radius: 100%;
+    opacity: 0.5;
+    background: white;
+  }
+}
+
+.left-hole {
+  height: 7px;
+  width: 7px;
+  position: relative;
+  top: -3px;
+  left: 2px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background: #292933;
+}
+
+.right-hole {
+  height: 7px;
+  width: 7px;
+  position: relative;
+  top: -10px;
+  left: 13px;
+  box-sizing: border-box;
+  border-radius: 7px;
+  background: #292933;
+}
+
+.mouth {
+  height: 40px;
+  width: 83px;
+  position: relative;
+  top: 65px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 4;
+  box-sizing: border-box;
+  border-radius: 0 0 41px 41px;
+  border: 10px solid #292933;
+  border-top: 0;
+  background:rgb(226, 117, 67);
+  &::before {
+    display: block;
+    content: "";
+    height: 20px;
+    width: 43px;
+    position: relative;
+    top: 13px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-sizing: border-box;
+    border-radius: 0px 0px 20px 20px;
+    border: 9px solid #292933;
+    border-top: 0;
+    background: transparent;
+  }
+}
+
+.arms {
+  height: 225px;
+  width: 360px;
+  z-index: -1;
+  position: relative;
+  top: 110px;
+  animation: 10s swish infinite;
+  box-sizing: border-box;
+  border: 10px solid #292933;
+  border-bottom: 0;
+  border-radius: 230px 230px 0 0;
+  background: transparent;
+  &::before {
+    display: block;
+    content: "";
+    height: 215px;
+    width: 340px;
+    box-sizing: border-box;
+    border: 50px solid saddlebrown;
+    border-bottom: 0;
+    border-radius: 230px 230px 0 0;
+    background: transparent;
+  }
+  &::after {
+    display: block;
+    content: "";
+    height: 165px;
+    width: 240px;
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    box-sizing: border-box;
+    border: 10px solid #292933;
+    border-bottom: 0;
+    border-radius: 230px 230px 0 0;
+    background: transparent;
+  }
+}
+
+.left-hand {
+  height: 23px;
+  width: 50px;
+  position: relative;
+  top: -9px;
+  left: -10px;
+  z-index: 1;
+  
+  border: 10px solid #292933;
+  border-radius: 0 0 65px 65px;
+  background:rgb(226, 117, 67);
+}
+
+.right-hand {
+  height: 23px;
+  width: 50px;
+  position: relative;
+  top: -52px;
+  left: 280px;
+  z-index: 1;
+  
+  border: 10px solid #292933;
+  border-radius: 0 0 65px 65px;
+  background:rgb(226, 117, 67);
+}
+
+.eyes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  
+}
+
+.eye {
+  position: relative;
+  width: 40px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10px;
+  margin-left: 10px;
+  overflow: hidden; /* Hide overflow to create a more realistic eyelid */
+}
+
+.shut {
+  width: 37px;
+  height: 20px;
+  background: transparent;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 999;
+}
+
+.shut span {
+  display: block;
+  width: 100%;
+  height: 30%;
+  background-color: #ff6b6b;
+  border-radius: 0 0 60% 60%;
+  transition: 0.4s all;
+}
+
+.shut span.active {
+  height: 150%;
+  opacity: 1;
+}
+
+
+
+.pupil {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-color: #000;
+}
+
+@keyframes blink
+{
+0%
+{
+  height: 20%;
+}
+50%
+{
+height: 100%;
+
+
+}
+100%
+{
+
+  height:20%;
+}
+
+}
+
+
+.eye:hover>.shut span
+{
+  height:150%
+
+}
+.belly {
+  height: 90px;
+  width: 210px;
+  position: absolute;
+  transform: translate(-50%, 0);
+  top: 238px;
+  left: 50%;
+  box-sizing: border-box;
+  border-radius: 0 0 100px 100px;
+  border: 10px solid lightgrey;
+  background: grey;
+  &::before {
+    display: block;
+    content: "";
+    height: 60px;
+    width: 110px;
+    position: relative;
+    top: 3px;
+    left: 40px;
+    background: lightgrey;
+    box-sizing: border-box;
+    border-radius: 0 0 100px 100px;
+    border: 10px solid lightgrey;
+  }
+}
+
+
+
+@keyframes wiggle {
+    0% {
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+    5% {
+      transform: translate(-50%, -50%) scaleX(1.05);
+    }
+    10% {
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+    15% {
+      transform: translate(-50%, -50%) scaleX(1.05);
+    }
+    20% {
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+  
+    50% {
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+    57% {
+      transform: translate(-50%, -50%) scaleX(1.05);
+    }
+    64% {
+      transform: translate(-50%, -50%) scaleX(1);
+    }
+  }
+  
+  @keyframes swish {
+    0% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(4deg);
+    }
+    100% {
+      transform: rotate(-4deg);
+    }
+  }
+
+  
